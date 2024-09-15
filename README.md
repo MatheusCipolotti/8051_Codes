@@ -5,3 +5,8 @@ Repositório dedicado ao armazenamento de projetos e exemplos de código utiliza
 Os projetos desse diretório necessitam a instalação do [SDCC](https://sourceforge.net/projects/sdcc/files/). 
 
 Foi desenvolvido um [Compilador](Compilador) em python que automatiza o processo de compilação dos projetos, o arquivo .exe deve ser copiado para o diretório onde está sendo realizado o projeto C do 8051
+
+# Códigos
+- [Blink_LED](Blink LED)
+- [Entrada_Digital](Entrada_Digital)
+- [INT0](INT0_Interrupcao_Externa) - Interrupção Externa pelo INT0
