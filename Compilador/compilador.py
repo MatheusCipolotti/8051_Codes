@@ -1,0 +1,51 @@
+import os
+import shutil
+import subprocess
+
+# Solicita o nome do arquivo .c
+filename = input("Digite o nome do arquivo .c (sem extensão): ")
+
+# Verifica se o arquivo .c existe
+if not os.path.isfile(f"{filename}.c"):
+    print(f"Erro: O arquivo {filename}.c não foi encontrado.")
+else:
+    # Nome da nova pasta onde os arquivos serão armazenados
+    new_dir = f"{filename}_build"
+
+    # Cria a nova pasta se não existir ou limpa a pasta se já existir
+    if os.path.exists(new_dir):
+        print(f"Pasta {new_dir} já existe. Limpando conteúdo antigo...")
+        shutil.rmtree(new_dir)  # Remove a pasta e todo o conteúdo
+    os.makedirs(new_dir)
+
+    # Comando SDCC para compilar o arquivo
+    sdcc_command = f"sdcc {filename}.c"
+
+    try:
+        print("Compilando com SDCC...")
+        subprocess.run(sdcc_command, shell=True, check=True)
+
+        # Extensões de arquivos gerados pelo SDCC
+        extensions = ['.asm', '.lst', '.rst', '.sym', '.ihx', '.lk', '.map', '.mem', '.rel']
+
+        # Mover todos os arquivos gerados pelo SDCC para a nova pasta
+        for ext in extensions:
+            src_file = f"{filename}{ext}"
+            if os.path.isfile(src_file):
+                shutil.move(src_file, new_dir)
+
+        # Caminhos dos arquivos na nova pasta
+        ihx_file = os.path.join(new_dir, f"{filename}.ihx")
+        hex_file = os.path.join(new_dir, f"{filename}.hex")
+
+        # Verifica se o arquivo .ihx foi gerado e executa o packihx
+        if os.path.isfile(ihx_file):
+            packihx_command = f"packihx {ihx_file} > {hex_file}"
+            print("Gerando arquivo .hex com packihx...")
+            subprocess.run(packihx_command, shell=True, check=True)
+            print(f"Arquivo .hex gerado com sucesso em: {hex_file}")
+        else:
+            print(f"Erro: O arquivo {ihx_file} não foi encontrado. A compilação com SDCC pode ter falhado.")
+
+    except subprocess.CalledProcessError as e:
+        print(f"Erro durante a execução dos comandos: {e}")
