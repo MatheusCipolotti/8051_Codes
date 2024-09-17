@@ -7,4 +7,4 @@ Os projetos desse diretório utilizaram o CodeBlocks e necessitam a instalação
 # Códigos
 - [Blink_LED](Blink)
 - [Entrada_Digital](Entrada_Digital)
-- [INT0](INT0_Interrupcao_Externa) - Interrupção Externa pelo INT0
+- [INT0](INT0) - Interrupção Externa pelo INT0
