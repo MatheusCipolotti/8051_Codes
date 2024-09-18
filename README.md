@@ -8,3 +8,4 @@ Os projetos desse diretório utilizaram o CodeBlocks e necessitam a instalação
 - [Blink_LED](Blink)
 - [Entrada_Digital](Entrada_Digital)
 - [INT0](INT0) - Interrupção Externa pelo INT0
+- [TIMER0](TMR0_#1) - Estouro do TIMER0 (overflow) via oscilador (cristal)
