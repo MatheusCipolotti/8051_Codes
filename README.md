@@ -3,6 +3,17 @@ Repositório dedicado ao armazenamento de projetos e exemplos de código utiliza
 
 # Compilador
 Os projetos desse diretório utilizaram o CodeBlocks e necessitam a instalação do [SDCC](https://sourceforge.net/projects/sdcc/files/). 
+Para criar um novo projeto basta seguir os passos abaixo:
+
+![Create_new_project](https://github.com/user-attachments/assets/826a3a22-c43a-4bdb-b37f-8d5d12ac33c0)
+
+![MCS51](https://github.com/user-attachments/assets/3ac6a64d-10b3-47e2-91e7-dac45cd0f6e6)
+
+![Next](https://github.com/user-attachments/assets/c0a4fa41-03cb-4b1f-9a5e-e7cd03c28f2d)
+
+![project_name](https://github.com/user-attachments/assets/0118f833-3471-4904-9f01-7d09b4710930)
+
+![compiler](https://github.com/user-attachments/assets/8e3f393f-b54c-41fa-98dd-a3e2aae23925)
 
 # Códigos
 - [Blink_LED](Blink)
