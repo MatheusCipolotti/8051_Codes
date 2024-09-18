@@ -1,6 +1,12 @@
 # 8051_Codes
 Repositório dedicado ao armazenamento de projetos e exemplos de código utilizando os microcontroladores 8051.
 
+# Códigos
+- [Blink_LED](Blink)
+- [Entrada_Digital](Entrada_Digital)
+- [INT0](INT0) - Interrupção Externa pelo INT0
+- [TIMER0](TMR0_#1) - Estouro do TIMER0 (overflow) via oscilador (cristal)
+
 # Compilador
 Os projetos desse diretório utilizaram o CodeBlocks e necessitam a instalação do [SDCC](https://sourceforge.net/projects/sdcc/files/). 
 Para criar um novo projeto basta seguir os passos abaixo:
@@ -13,14 +19,16 @@ Para criar um novo projeto basta seguir os passos abaixo:
 <img src="https://github.com/user-attachments/assets/3ac6a64d-10b3-47e2-91e7-dac45cd0f6e6">
 </p>
 
-![Next](https://github.com/user-attachments/assets/c0a4fa41-03cb-4b1f-9a5e-e7cd03c28f2d)
+<p align="center">
+<img src="https://github.com/user-attachments/assets/c0a4fa41-03cb-4b1f-9a5e-e7cd03c28f2d">
+</p>
 
-![project_name](https://github.com/user-attachments/assets/0118f833-3471-4904-9f01-7d09b4710930)
+<p align="center">
+<img src="https://github.com/user-attachments/assets/0118f833-3471-4904-9f01-7d09b4710930">
+</p>
 
-![compiler](https://github.com/user-attachments/assets/8e3f393f-b54c-41fa-98dd-a3e2aae23925)
+<p align="center">
+<img src="https://github.com/user-attachments/assets/8e3f393f-b54c-41fa-98dd-a3e2aae23925">
+</p>
 
-# Códigos
-- [Blink_LED](Blink)
-- [Entrada_Digital](Entrada_Digital)
-- [INT0](INT0) - Interrupção Externa pelo INT0
-- [TIMER0](TMR0_#1) - Estouro do TIMER0 (overflow) via oscilador (cristal)
+
