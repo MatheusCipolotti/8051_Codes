@@ -5,7 +5,9 @@ Repositório dedicado ao armazenamento de projetos e exemplos de código utiliza
 Os projetos desse diretório utilizaram o CodeBlocks e necessitam a instalação do [SDCC](https://sourceforge.net/projects/sdcc/files/). 
 Para criar um novo projeto basta seguir os passos abaixo:
 
-![Create_new_project](https://github.com/user-attachments/assets/826a3a22-c43a-4bdb-b37f-8d5d12ac33c0)
+<p align="center">
+<img src="https://github.com/user-attachments/assets/826a3a22-c43a-4bdb-b37f-8d5d12ac33c0">
+</p>
 
 ![MCS51](https://github.com/user-attachments/assets/3ac6a64d-10b3-47e2-91e7-dac45cd0f6e6)
 
