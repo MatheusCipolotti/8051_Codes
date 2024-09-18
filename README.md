@@ -8,7 +8,7 @@ Repositório dedicado ao armazenamento de projetos e exemplos de código utiliza
 - [TIMER0](TMR0_#1) - Estouro do TIMER0 (overflow) via oscilador (cristal)
 
 # Compilador
-Os projetos desse diretório utilizaram o CodeBlocks e necessitam a instalação do [SDCC](https://sourceforge.net/projects/sdcc/files/). 
+Os projetos desse diretório utilizaram o [CodeBlocks](https://sourceforge.net/projects/codeblocks/files/Binaries/20.03/Windows/codeblocks-20.03-setup.exe/download) e necessitam a instalação do [SDCC](https://sourceforge.net/projects/sdcc/files/). 
 Para criar um novo projeto basta seguir os passos abaixo:
 
 <p align="center">
